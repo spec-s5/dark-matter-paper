@@ -1,0 +1,18 @@
+\chapter*{Theory by Anoma Ganguly}
+We used the 1D Lyman-alpha power spectrum to obtain the constraining power on different dark matter models
+
+We computed the 1-sigma constraints on the amplitude and power law index of the linear matter power spectrum using tools provided in cup1d (Cosmology using P1D - small-scale clustering of the Lyman alpha forest) repository https://github.com/igmhub/cup1d/tree/main. It uses the LaCE emulator (https://github.com/igmhub/LaCE) to obtain the Ly-alpha power spectrum for a given set of cosmological + IGM parameters. LaCE_P1D.ipynb
+
+\begin{enumerate}
+ \item Install cup1d and LaCE following the instructions provided in https://github.com/igmhub/cup1d/tree/main?tab=readme-ov-file.
+Note: Before running the notebooks, please add import GPy to https://github.com/igmhub/LaCE/blob/main/lace/emulator/gp_emulator_new.py file.
+  \item We had to retrain the emulator before using it. This may not be required and could be improved.
+\end{enumerate}
+
+Notebook content: 
+- The amplitude and power law index of the linear matter power spectrum was obtained from CAMB.
+- The Ly-alpha mean flux models were used from literature Turner et al. and Becker et al.
+- The cosmological + IGM parameters are provided as inputs to the emulator. We keep the IGM parameters fixed and only vary the amplitude and power law index of the linear matter power spectrum. We also ignore the systematics.
+- The evolution of the amplitude of the linear matter power spectrum was done using the growth function fit provided in https://arxiv.org/abs/1012.2671.
+- We generate a mock P1D at best fit values from DESI DR1 measurements and do the scale cuts.
+- We use iminuit package to obtain 1-$\sigma$ constraint on the amplitude and power law index of the matter power spectrum.
