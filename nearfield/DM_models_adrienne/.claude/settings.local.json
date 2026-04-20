@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:arxiv.org)",
+      "WebSearch",
+      "WebFetch(domain:hal.science)",
+      "WebFetch(domain:iopscience.iop.org)"
+    ]
+  }
+}

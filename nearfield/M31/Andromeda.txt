@@ -25,16 +25,17 @@ km\,s^{-1}}$. With 13,000 fibers covering a 2.2~deg field of view,
 the northern component of Spec-S5 can observe {\underline{\it all}}
 of these $z\le23$~mag stars in $\approx 150$ nights, resulting in
 an unprecedented map of the accretion history and dark matter mass
-distribution within Andromeda. We note that this will be only other
-galaxy (i.e., other than the Milky Way) within which we have ever
-been able to understand the dark matter distribution to this level
-of detail.
+distribution within Andromeda 
+(e.g., Figure~\ref{fig:specs5_selection,fig:m31_satellite_detection}). 
+We note that this will be only other galaxy (i.e., other than the Milky Way) 
+within which we have ever been able to understand the dark matter 
+distribution to this level of detail.
 
 \begin{figure*}[t]
     \centering
     \includegraphics[width=\linewidth]{SpecS5_Andromeda_cmd_selection.png}
     \caption{Color-magnitude diagram of stars between 0.1 and 3 deg
-(left panel) and between 3 and 5.5 deg from the center of Andromeda
+(left panel) and between 3 and 5.5 deg (right panel) from the center of Andromeda
 galaxy. The $(g-i)_0$ are reddening-corrected photometry from the
 PAndAS survey; the y-axis shows the estimated $z$-band magnitude.
 The red box shows the selection region being used by DESI to select
@@ -45,4 +46,15 @@ by foreground Milky Way stars even in the outer parts of the Andromeda
 halo.
 }
 \label{fig:specs5_selection}
+\end{figure*}
+
+\begin{figure*}[t]
+    \centering
+    \includegraphics[width=\linewidth]{M31_Satellite_Detection.pdf}
+    \caption{Spec-S5 observations to a limiting magnitude of $z\le23$ AB mag
+will detect $\ge$10 stars in all M31 satellites with absolute magnitudes brighter
+than $M_V\approx-5$. This will result in the ability to map the halo structure of 
+M31 with more than 150 disrupted satellite streams. 
+}
+\label{fig:m31_satellite_detection}
 \end{figure*}
